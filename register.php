@@ -53,7 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (!isset($_POST["phone"]) || strlen($_POST["phone"]) <= 0) {
         array_push($errors, "phone is required");
     } elseif (!is_int($_POST["phone"])) {
-        array_push($errors, "This is not a phone number : يا حمار هههههه");
+        array_push($errors, "This is not a phone number ");
     } elseif (strlen($_POST["phone"]) < 6) {
         array_push($errors, "phone should be more thann 10");
     } elseif (strlen($_POST["phone"]) > 12) {
